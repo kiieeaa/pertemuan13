@@ -5,8 +5,14 @@ using namespace std;
 
 int main () {
     string baris;
+    // membuat file dalam mode menulis
     ofstream outfile;
     outfile.open("contohfile.txt");
     cout << " > = menulis file, \'q\' untuk keluar" << endl;
-    
+
+    while (true) {
+        cout << "- ";
+
+        
+    }
 }
