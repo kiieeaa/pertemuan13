@@ -22,11 +22,14 @@ int main () {
     ifstream infile;
     infile.open("contohfile.txt");
     cout << endl << ">= membuka dan membaca file " << endl;
-    if (infile.is_open())
-    {
-        cout << baris << '\n';
+    if (infile.is_open()){
+        {
+            cout << baris << '\n';
+        }
+        //tutup file tersebut setelah selsai
+        infile.close();
     }
-    //tutup file tersebut setelah selsai
-
+    else cout << "Unable to open file";
+    return 0;
 
 }
